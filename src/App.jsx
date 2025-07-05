@@ -4,6 +4,14 @@
 
 {/*In React, the individual things rendered in braces must be primitive values, such as numbers or strings.*/}
 
+import { useState } from 'react'
+
+{/*In React, useState, as well as any other function starting with “use”, is called a Hook.
+Hooks are special functions that are only available while React is rendering
+(which we’ll get into in more detail on the next page).
+They let you “hook into” different React features.
+When you call useState, you are telling React that you want this component to remember something:
+*/}
 
 const Header= (obj)=>{
     return (
@@ -27,7 +35,7 @@ const Content = ({ar}) => {
         </div>
     );
 }
-const App = () => {
+const App = (counter) => {
     const course = {
         name: 'Half Stack application development',
         parts: [
