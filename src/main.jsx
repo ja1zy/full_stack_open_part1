@@ -16,3 +16,6 @@ counter += 1
 refresh()
 counter += 1
 refresh()
+
+{/*e. React waits until all code in the event handlers has run before processing your state updates.
+This is why the re-render only happens after all these setNumber() calls.*/}

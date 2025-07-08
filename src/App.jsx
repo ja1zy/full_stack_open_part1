@@ -11,6 +11,15 @@ When you call useState, you are telling React that you want this component to re
 */}
 {/*'s recommended to write React components that are small
 and reusable across the application and even across projects.*/}
+{/*     it is forbidden in React to mutate state directly   */}
+const Display = (props) => {
+    return (
+        <div>{props.counter}</div>
+    )
+}
+
+
+
 const Header= (obj)=>{
     return (
         <h1>{obj.course}</h1>
